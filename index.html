@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character Encoding & Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>Apex Architectures | Next-Gen Apps, E-Commerce & Distributed Backends</title>
+  <meta name="title" content="Apex Architectures | Next-Gen Apps, E-Commerce & Distributed Backends">
+  <meta name="description" content="Premier digital engineering studio specializing in high-performance Web & Mobile Apps, headless E-Commerce, publishing platforms, and multi-architecture enterprise backends. Built with Apple-grade precision.">
+  <meta name="keywords" content="web app development, mobile apps, headless ecommerce, distributed backend, microservices, kafka, serverless, apple design, software architecture">
+  <meta name="author" content="Apex Architectures">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="http://localhost:3000/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:3000/">
+  <meta property="og:title" content="Apex Architectures | Next-Gen Apps, E-Commerce & Distributed Backends">
+  <meta property="og:description" content="Premier digital engineering studio specializing in high-performance Web & Mobile Apps, headless E-Commerce, publishing platforms, and multi-architecture enterprise backends.">
+  <meta property="og:image" content="/assets/og-cover.png">
+  <meta property="og:site_name" content="Apex Architectures">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:3000/">
+  <meta property="twitter:title" content="Apex Architectures | Next-Gen Apps, E-Commerce & Distributed Backends">
+  <meta property="twitter:description" content="High-performance Web & Mobile Apps, headless E-Commerce, publishing platforms, and multi-architecture enterprise backends.">
+  <meta property="twitter:image" content="/assets/og-cover.png">
+
+  <!-- Structured Data JSON-LD (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Apex Architectures",
+    "description": "Enterprise engineering studio delivering apps, e-commerce, content platforms, and scalable backends.",
+    "url": "http://localhost:3000",
+    "serviceType": [
+      "Web Application Development",
+      "Mobile App Development",
+      "Headless E-Commerce Platforms",
+      "High-Traffic Blogs & Publishing CMS",
+      "Distributed Backend Systems & Microservices"
+    ],
+    "priceRange": "$$$$",
+    "areaServed": "Global"
+  }
+  </script>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Ambient Background Canvas Glow -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Floating Frosted Navigation -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" aria-label="Apex Architectures Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 22 22 22"></polygon>
+          </svg>
+        </span>
+        <span>Apex Architectures</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Overview</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#architectures" class="nav-link">Architectures</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary" id="nav-cta-btn">Start Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-badge reveal-on-scroll">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Next-Generation Digital Craftsmanship</span>
+        </div>
+
+        <h1 id="hero-heading" class="hero-title reveal-on-scroll delay-100">
+          Architecting Systems of Impeccable Elegance.
+        </h1>
+
+        <p class="hero-subtitle reveal-on-scroll delay-200">
+          We design and build production-grade Web & Mobile Applications, high-conversion headless E-Commerce, blazing-fast content platforms, and multi-architecture distributed backends.
+        </p>
+
+        <div class="hero-actions reveal-on-scroll delay-300">
+          <a href="#contact" class="btn btn-primary">Initiate Inquiry</a>
+          <a href="#services" class="btn btn-secondary">Explore Solutions &darr;</a>
+        </div>
+
+        <div class="hero-metrics reveal-on-scroll delay-400">
+          <div class="metric-item">
+            <div class="metric-value">99.99%</div>
+            <div class="metric-label">Uptime SLA</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">&lt; 45ms</div>
+            <div class="metric-label">P99 Edge Latency</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">160+</div>
+            <div class="metric-label">Shipped Systems</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">4.99 / 5</div>
+            <div class="metric-label">Client Trust Score</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Services Showcase (Bento Grid) -->
+    <section id="services" class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Core Capabilities</span>
+          <h2 id="services-heading" class="section-title">Engineered for Exponential Scale.</h2>
+          <p class="section-desc">
+            Four foundational pillars designed with Apple-grade aesthetic precision, uncompromising performance benchmarks, and bulletproof reliability.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 1: Mobile & Web Applications (Span 8) -->
+          <article class="bento-card span-8 reveal-on-scroll">
+            <div class="card-top">
+              <span class="card-badge">Pillar I &bull; Native & Web</span>
+              <h3 class="card-title">Mobile & Web Applications</h3>
+              <p class="card-desc">
+                Fluid 120fps interactions, physics-driven gestures, and offline-first data sync. Seamless cross-platform experiences on iOS, Android, and modern progressive web browsers.
+              </p>
+              <div class="card-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Swift / SwiftUI</span>
+                <span class="tag">Kotlin</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">PWA</span>
+                <span class="tag">WebSockets</span>
+              </div>
+            </div>
+
+            <div class="card-visual">
+              <div class="device-preview" aria-hidden="true">
+                <div class="mock-screen">
+                  <div class="mock-screen-header"></div>
+                  <div class="mock-row" style="width: 70%;"></div>
+                  <div class="mock-row" style="width: 90%;"></div>
+                  <div class="mock-chart-bar"></div>
+                </div>
+                <div class="mock-screen" style="transform: scale(0.9) translateY(10px);">
+                  <div class="mock-screen-header"></div>
+                  <div class="mock-row" style="width: 60%; background: #2997ff;"></div>
+                  <div class="mock-row" style="width: 85%;"></div>
+                  <div class="mock-row" style="width: 45%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: E-Commerce Platforms (Span 4) -->
+          <article class="bento-card span-4 reveal-on-scroll delay-100">
+            <div class="card-top">
+              <span class="card-badge">Pillar II &bull; Commerce</span>
+              <h3 class="card-title">High-Velocity E-Commerce</h3>
+              <p class="card-desc">
+                Headless architecture engineered for sub-second page transitions, dynamic inventory sync, and conversion-optimized checkout funnels.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Headless Shopify</span>
+                <span class="tag">MedusaJS</span>
+                <span class="tag">Stripe Billing</span>
+                <span class="tag">Algolia</span>
+              </div>
+            </div>
+
+            <div class="card-visual">
+              <div class="metric-widget" aria-hidden="true">
+                <div class="widget-stat">
+                  <span class="stat-label">Checkout Speed</span>
+                  <span class="stat-val">340ms (Instant)</span>
+                </div>
+                <div class="widget-stat">
+                  <span class="stat-label">Conversion Lift</span>
+                  <span class="stat-val">+42.8%</span>
+                </div>
+                <div class="widget-stat">
+                  <span class="stat-label">Global Currencies</span>
+                  <span class="stat-val">135+ Active</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Publishing Platforms & Blogs (Span 4) -->
+          <article class="bento-card span-4 reveal-on-scroll">
+            <div class="card-top">
+              <span class="card-badge">Pillar III &bull; Content & Media</span>
+              <h3 class="card-title">Publishing & Content Hubs</h3>
+              <p class="card-desc">
+                Dynamic publishing platforms with real-time markdown/MDX compilation, automatic OpenGraph asset generation, and sub-second TTFB.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Headless CMS</span>
+                <span class="tag">Sanity</span>
+                <span class="tag">MDX</span>
+                <span class="tag">Edge ISR</span>
+                <span class="tag">SEO Engine</span>
+              </div>
+            </div>
+
+            <div class="card-visual">
+              <div class="terminal-window" aria-hidden="true">
+                <div class="terminal-header">
+                  <div class="t-dot red"></div>
+                  <div class="t-dot yellow"></div>
+                  <div class="t-dot green"></div>
+                </div>
+                <div class="t-line">$ <span class="t-hl">deploy-article</span> --edge</div>
+                <div class="t-line">&check; Generated static HTML in 14ms</div>
+                <div class="t-line">&check; Propagated to 310 edge nodes</div>
+                <div class="t-line" style="color: #27c93f;">&check; Core Web Vitals: 100/100</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Advanced Multi-Architecture Backends (Span 8) -->
+          <article id="architectures" class="bento-card span-8 arch-card reveal-on-scroll delay-100">
+            <div class="card-top">
+              <span class="card-badge" style="background: rgba(41, 151, 255, 0.15); color: #2997ff;">Pillar IV &bull; Enterprise Core</span>
+              <h3 class="card-title">Multi-Architecture Backend Platforms</h3>
+              <p class="card-desc">
+                Tailored architectural blueprints engineered for fault tolerance, elastic throughput, and mission-critical uptime. Switch paradigms below:
+              </p>
+            </div>
+
+            <!-- Architecture Interactive Tabs -->
+            <div class="arch-nav-tabs" role="tablist" aria-label="Backend Architecture Options">
+              <button class="arch-tab-btn active" data-arch="microservices" role="tab" aria-selected="true" id="tab-microservices">
+                <span>Microservices & K8s</span>
+              </button>
+              <button class="arch-tab-btn" data-arch="eventdriven" role="tab" aria-selected="false" id="tab-eventdriven">
+                <span>Event-Driven & Kafka</span>
+              </button>
+              <button class="arch-tab-btn" data-arch="serverless" role="tab" aria-selected="false" id="tab-serverless">
+                <span>Serverless & Edge</span>
+              </button>
+              <button class="arch-tab-btn" data-arch="distributed" role="tab" aria-selected="false" id="tab-distributed">
+                <span>Distributed Databases</span>
+              </button>
+            </div>
+
+            <!-- Dynamic Architecture Viewport -->
+            <div class="arch-content-viewport" aria-live="polite">
+              <div id="arch-details" class="arch-details">
+                <!-- Injected dynamically via js/architecture.js -->
+              </div>
+              <div id="arch-diagram" class="arch-diagram-box">
+                <!-- Injected dynamically via js/architecture.js -->
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Client Testimonials Section -->
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Verified Proof</span>
+          <h2 id="testimonials-heading" class="section-title">Trusted by Engineering Leaders.</h2>
+          <p class="section-desc">
+            Explore how our bespoke architectures transformed throughput, conversion rates, and operational resilience for visionary enterprises.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card reveal-on-scroll">
+            <div class="test-metric-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+              <span>+320% Revenue Lift</span>
+            </div>
+            <p class="test-quote">
+              "Apex transitioned our fragmented monolithic store to a unified headless commerce engine. Our conversion rate skyrocketed by 42% on week one."
+            </p>
+            <div class="test-author">
+              <div class="author-avatar" aria-hidden="true">EL</div>
+              <div class="author-info">
+                <h5>Elena Larsson</h5>
+                <p>Chief Product Officer &bull; Lumina Retail</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card reveal-on-scroll delay-100">
+            <div class="test-metric-pill" style="background: rgba(39, 201, 63, 0.12); color: #27c93f;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>Zero Downtime Migration</span>
+            </div>
+            <p class="test-quote">
+              "The Kafka event-streaming architecture designed by Apex sustained 450,000 requests/sec with zero packet drops during our flagship global product drop."
+            </p>
+            <div class="test-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);" aria-hidden="true">MR</div>
+              <div class="author-info">
+                <h5>Marcus Vance</h5>
+                <p>VP of Infrastructure &bull; Nexus Global</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card reveal-on-scroll delay-200">
+            <div class="test-metric-pill" style="background: rgba(168, 85, 247, 0.12); color: #a855f7;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>38ms Global TTFB</span>
+            </div>
+            <p class="test-quote">
+              "Our international publication serves 12M monthly readers. With their edge CMS and automated asset pipeline, our pages feel entirely instantaneous."
+            </p>
+            <div class="test-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);" aria-hidden="true">SO</div>
+              <div class="author-info">
+                <h5>Sarah O'Connor</h5>
+                <p>Editor-in-Chief &bull; Chrono Media</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Interactive Contact & Inquiry Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Direct Line</span>
+          <h2 id="contact-heading" class="section-title">Let&rsquo;s Build Something Unprecedented.</h2>
+          <p class="section-desc">
+            Share your project parameters. Our lead architects will review your requirements and provide an architectural blueprint within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-card reveal-on-scroll">
+          <form id="inquiry-form" novalidate aria-label="Project Inquiry Form">
+            <!-- Project Types Multi-Select Pills -->
+            <div class="form-group">
+              <label class="form-label" id="project-type-label">Select Target Services (Multi-select)</label>
+              <div class="pill-selectors" role="group" aria-labelledby="project-type-label">
+                <div class="pill-option">
+                  <input type="checkbox" id="type-app" name="project-type" value="Web & Mobile Apps" checked>
+                  <label for="type-app" class="pill-label">Web & Mobile Apps</label>
+                </div>
+                <div class="pill-option">
+                  <input type="checkbox" id="type-ecomm" name="project-type" value="E-Commerce Platform">
+                  <label for="type-ecomm" class="pill-label">E-Commerce Platform</label>
+                </div>
+                <div class="pill-option">
+                  <input type="checkbox" id="type-blog" name="project-type" value="Content & Blogs CMS">
+                  <label for="type-blog" class="pill-label">Content & Blogs CMS</label>
+                </div>
+                <div class="pill-option">
+                  <input type="checkbox" id="type-backend" name="project-type" value="Distributed Backend Architecture">
+                  <label for="type-backend" class="pill-label">Distributed Backend Architecture</label>
+                </div>
+              </div>
+              <div id="project-type-error" class="error-msg" role="alert"></div>
+            </div>
+
+            <!-- Budget Single-Select Pills -->
+            <div class="form-group">
+              <label class="form-label" id="budget-label">Target Investment Range</label>
+              <div class="pill-selectors" role="radiogroup" aria-labelledby="budget-label">
+                <div class="pill-option">
+                  <input type="radio" id="budget-1" name="budget" value="$15k - $30k">
+                  <label for="budget-1" class="pill-label">$15k - $30k</label>
+                </div>
+                <div class="pill-option">
+                  <input type="radio" id="budget-2" name="budget" value="$30k - $60k" checked>
+                  <label for="budget-2" class="pill-label">$30k - $60k</label>
+                </div>
+                <div class="pill-option">
+                  <input type="radio" id="budget-3" name="budget" value="$60k - $120k">
+                  <label for="budget-3" class="pill-label">$60k - $120k</label>
+                </div>
+                <div class="pill-option">
+                  <input type="radio" id="budget-4" name="budget" value="$120k+">
+                  <label for="budget-4" class="pill-label">$120k+ (Enterprise)</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Name and Email Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="user-name" class="form-label">Full Name *</label>
+                <input type="text" id="user-name" class="form-input" placeholder="e.g. Alexander Vance" required autocomplete="name">
+                <div id="name-error" class="error-msg" role="alert"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email" class="form-label">Corporate Email *</label>
+                <input type="email" id="user-email" class="form-input" placeholder="alexander@company.com" required autocomplete="email">
+                <div id="email-error" class="error-msg" role="alert"></div>
+              </div>
+            </div>
+
+            <!-- Project Message -->
+            <div class="form-group">
+              <label for="user-message" class="form-label">Project Scope & Technical Objectives *</label>
+              <textarea id="user-message" class="form-textarea" placeholder="Detail your operational scale, target timelines, and core architectural challenges..." required></textarea>
+              <div id="message-error" class="error-msg" role="alert"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-btn-wrapper">
+              <button type="submit" id="submit-btn" class="btn btn-primary submit-btn">
+                <span>Dispatch Inquiry</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Apple-Style Confirmation Modal -->
+  <div id="success-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-icon" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3 id="modal-title" class="modal-title">Inquiry Received.</h3>
+      <p class="modal-desc">
+        Thank you for submitting your project parameters. A Lead Solutions Architect has been assigned to your dossier.
+      </p>
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 24px; font-family: ui-monospace, monospace; font-size: 0.85rem; color: #86868b;">
+        Tracking Reference: <span id="modal-ref-id" style="color: #2997ff; font-weight: 600;">APX-774921</span>
+      </div>
+      <button type="button" id="modal-close-btn" class="btn btn-primary" style="width: 100%;">
+        Dismiss & Return to Showcase
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Return to top of page">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #27c93f;"></span>
+        <span>&copy; 2026 Apex Architectures Inc. All rights reserved. Crafted with Apple Human Interface standards.</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#hero">Overview</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#architectures">Architectures</a></li>
+        <li><a href="#contact">Inquire</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Application Module Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

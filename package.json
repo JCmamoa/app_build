@@ -1,0 +1,22 @@
+{
+  "name": "apple-services-showcase",
+  "version": "1.0.0",
+  "description": "Apple-inspired continuous scrolling services showcase website with Bento Grid architecture",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/run-all-tests.js",
+    "test:func": "node tests/functionality.test.js",
+    "test:sec": "node tests/security-audit.test.js",
+    "test:seo": "node tests/seo-content.test.js"
+  },
+  "keywords": [
+    "bento-grid",
+    "apple-design",
+    "micro-interactions",
+    "continuous-scroll",
+    "services-showcase"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT"
+}
