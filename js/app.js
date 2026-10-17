@@ -7,9 +7,12 @@
 import { initBentoTilt } from './bento-tilt.js';
 import { initArchitectureSwitcher } from './architecture.js';
 import { initContactForm } from './contact-form.js';
+import { initThemeSwitcher, initLiveChat } from './chat-and-theme.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize sub-modules
+  initThemeSwitcher();
+  initLiveChat();
   initBentoTilt();
   initArchitectureSwitcher();
   initContactForm();

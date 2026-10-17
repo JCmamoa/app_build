@@ -48,6 +48,128 @@
   --transition-slow: 0.6s var(--ease-apple);
 }
 
+/* Apple Light Theme Mode */
+[data-theme="light"] {
+  --bg-primary: #f5f5f7;
+  --bg-secondary: #e8e8ed;
+  --surface-card: rgba(255, 255, 255, 0.82);
+  --surface-card-hover: rgba(255, 255, 255, 0.95);
+  --surface-elevated: #ffffff;
+  
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.16);
+  --border-focus: rgba(0, 113, 227, 0.5);
+
+  --text-primary: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #86868b;
+  --text-accent: #0071e3;
+
+  --accent-blue: #0071e3;
+  --grad-hero: linear-gradient(135deg, #1d1d1f 0%, #434344 100%);
+  --grad-glow: radial-gradient(circle at 50% 50%, rgba(0, 113, 227, 0.08) 0%, transparent 70%);
+}
+
+[data-theme="light"] .ambient-blob {
+  opacity: 0.22;
+}
+
+[data-theme="light"] .bento-card:hover {
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .card-visual {
+  background: rgba(245, 245, 247, 0.85);
+}
+
+[data-theme="light"] .mock-screen {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .mock-row {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .mock-screen-header {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .widget-stat {
+  background: #ffffff;
+}
+
+[data-theme="light"] .terminal-window {
+  background: #1e1e24;
+  color: #e4e4e7;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+[data-theme="light"] .arch-diagram-box {
+  background: #f8f8fa;
+}
+
+[data-theme="light"] .diagram-node {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .diagram-node span:first-child {
+  color: #1d1d1f !important;
+}
+
+[data-theme="light"] .form-input,
+[data-theme="light"] .form-textarea {
+  background: #ffffff;
+  color: #1d1d1f;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .btn-primary {
+  background: #1d1d1f;
+  color: #ffffff;
+}
+
+[data-theme="light"] .btn-primary:hover {
+  background: #000000;
+}
+
+[data-theme="light"] .btn-secondary {
+  background: rgba(0, 0, 0, 0.05);
+  color: #1d1d1f;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .btn-secondary:hover {
+  background: rgba(0, 0, 0, 0.09);
+}
+
+[data-theme="light"] .modal-content {
+  background: #ffffff;
+}
+
+[data-theme="light"] .site-footer {
+  background: #ebebed;
+}
+
+[data-theme="light"] .nav-container {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .back-to-top {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1d1d1f;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .back-to-top:hover {
+  background: #1d1d1f;
+  color: #ffffff;
+}
+
 /* Modern CSS Reset */
 *, *::before, *::after {
   box-sizing: border-box;
