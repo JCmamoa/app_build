@@ -9,13 +9,13 @@ import { initArchitectureSwitcher } from './architecture.js';
 import { initContactForm } from './contact-form.js';
 import { initThemeSwitcher, initLiveChat } from './chat-and-theme.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize sub-modules
-  initThemeSwitcher();
-  initLiveChat();
-  initBentoTilt();
-  initArchitectureSwitcher();
-  initContactForm();
+function initApp() {
+  // Initialize sub-modules with error boundaries
+  try { initThemeSwitcher(); } catch (e) { console.error('ThemeSwitcher init error:', e); }
+  try { initLiveChat(); } catch (e) { console.error('LiveChat init error:', e); }
+  try { initBentoTilt(); } catch (e) { console.error('BentoTilt init error:', e); }
+  try { initArchitectureSwitcher(); } catch (e) { console.error('ArchitectureSwitcher init error:', e); }
+  try { initContactForm(); } catch (e) { console.error('ContactForm init error:', e); }
 
   // Scroll Progress Bar
   const progressBar = document.getElementById('scroll-progress');
@@ -114,4 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 0);
     });
   }
-});
+}
+
+// Resilient execution
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
